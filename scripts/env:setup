@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker run --net host -d --name boilerplate_mysql -e MYSQL_ROOT_PASSWORD=password_used_only_in_local mysql:latest
+docker run --net host -d --name boilerplate_matomo matomo:latest
